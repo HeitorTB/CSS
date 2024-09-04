@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Meus estudos back end</h1>
+    <hr> 
+    <p>- Lógica e introdução ao CSS</p>
+    <p>App para obter cores: Colorzilla</p>
+    <p><a href="https://youtu.be/Swh0Yt2s5Zs?si=FpA2UGbyBGVwIgV8">Tutorial Colorzilla</a></p>
+    <hr> 
+
+    <h2>Configurações globais da Css</h2>
+    <p><b>height=100%;</b></p>
+    <pre>
+        <code>
+            *{
+                height: 100%;
+            }
+        </code>
+    </pre>
+    <b>
+        <p>@charset "UTF-8"</p>
+    </b>
+
+    <h2>CSS Inline</h2>
+    <p> O css inline serve para curtas modificações visuais no seu site, sendo mais especifico e alterando pequenos pontos</p>
+    <p><b>Exemplo:</b> Para mudar todas as tags h2 para uma determinada cor, seria feito de um em um</p>
+    <p>Ao lado da tag colocamos o style='' e alteramos o que for necessário </p>
+    <p style="color: red"> Nunca utilizar </p>
+
+    <h2>Estilos Locais/Internos</h2>
+    <p>Colocar dentro de head o style e dentro dele, iserir suas modificações</p>
+    <p>Sendo aplicado para todos os, por exemplo, h2</p>
+    <pre>
+        <code>
+            style
+
+                body {
+                    background-color: lightgrey;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 15px; 
+                }
+
+                h2  {
+                    color: darkblue;
+                    background-color: lightblue;
+                }
+
+            /style
+        </code>
+    </pre>
+    <p>Desvantagens:
+        <ol>
+            <li>Os styles ocupam muito espaço</li>
+            <li>Não serve para 2 ou mais documentos(páginas)</li>
+        </ol>
+    </p>
+
+    <h2> Estilos externos </h2>
+    <p><a href="pagina02.html" target="_self">Ir para a página 2</a></p>
+    <p>Ao criar páginas teria que repetir o css em cada página</p>
+    <p>Com um link de css externo isso não e necessário</p>
+    <p> <b>Dentro da tag head cria um link:css</b></p>
+    <p>Dentro do Css você coloca todos os estilos voltados para todas as páginas</p>
+    <p>Tem como criar um link extra com configurações que apenas algumas páginas terão</p>
+    <br>
+
+    <h2>Psicologia das cores</h2>
+    <p><b>Azul:</b> <ul type="disc">
+        <li>Competência</li>
+        <li>Sabedoria </li>
+        <li>Calma</li>
+        <li>Confiança</li>
+        <li>Profissionalismo</li>
+        <li>Usar: Tecnologia, medicina, ciências, governo</li>
+        <li>Evitar: Comida (reduz apetite)</li>
+    </ul></p>
+
+    <p><b>Vermelho</b><ul>
+        <li>Amor</li>
+        <li>Emoção</li>
+        <li>Energia</li>
+        <li>Raiva</li>
+        <li>Perigo</li>
+        <li>Usar: comida, moda, entretenimento, serviços de saúde e emergencia </li>
+        <li>Evitar: Luxo, natureza...</li>
+    </ul></p>
+
+    <p><b>Amarelo</b><ul>
+        <li>Felicidade</li>
+        <li>Alegria</li>
+        <li>Otimismo</li>
+        <li>Covardia </li>
+        <li>Usar: Iluminar, acalmar, chamar atenção</li>
+        <li>Evitar: Pode indicar que é barato ou spam </li>
+    </ul></p>
+
+    <p><b>Amarelo</b><ul>
+        <li>Felicidade</li>
+        <li>Alegria</li>
+        <li>Otimismo</li>
+        <li>Covardia </li>
+        <li>Usar: Iluminar, acalmar, chamar atenção</li>
+        <li>Evitar: Pode indicar que é barato ou spam </li>
+    </ul></p>
+    
+    <p><b>Laranja</b><ul>
+        <li>divertimento</li>
+        <li>ambição</li>
+        <li>Calor</li>
+        <li>Cautela</li>
+        <li>Usar: Comercio eletronico, entretenimento, Call to action</li>
+        <li>Evitar: Pode ser cansativo se muito usado </li>
+    </ul></p>
+    
+    <p><b>Verde</b><ul>
+        <li>Saúde</li>
+        <li>Natureza</li>
+        <li>Dinheiro</li>
+        <li>Sorte</li>
+        <li>Inveja</li>
+        <li>Usar: Relaxamento, turismo, financeiros, meio ambiente</li>
+        <li>Evitar: Luxo, tecnologia, meninas adolecentes </li>
+    </ul></p>
+
+    <p><b>Roxo</b><ul>
+        <li>Criatividade</li>
+        <li>Poder</li>
+        <li>Sabedoria</li>
+        <li>Mistério</li>
+        <li>Usar: Produtos de beleza, astrologia, ioga, espiritualidade, adolecentes </li>
+        <li>Evitar: Não prende atenção, indiferente </li>
+    </ul></p>
+    
+    <p><b>Marrom</b><ul>
+        <li>Terra</li>
+        <li>Robustez</li>
+        <li>Estabilidade</li>
+        <li>Amizade</li>
+        <li>Usar: Alimentação, imobiliária, animais, finanças</li>
+        <li>Evitar: Cor conservadora </li>
+    </ul></p>
+
+    <p><b>Preto</b><ul>
+        <li>Elegância</li>
+        <li>Autoridade</li>
+        <li>Mistério</li>
+        <li>Morte</li>
+        <li>Usar: Luxo, moda, marketing, cosméticos </li>
+        <li>Evitar: Desconforto e medo </li>
+    </ul></p>
+
+    <p><b>Branco</b><ul>
+        <li>Pureza</li>
+        <li>Limpeza</li>
+        <li>Segurança</li>
+        <li>Felicidade</li>
+        <li>Usar: Medicina, saúde, tecnologia, luxo (com preto, ouro, cinza)</li>
+        <li>Evitar: Não chama atenção, deve ser combinado </li>
+    </ul></p>
+
+    <p><b>Cinza</b><ul>
+        <li>Formalidade</li>
+        <li>Sofisticação</li>
+        <li>Frieza</li>
+        <li>Indiferença</li>
+        <li>Usar: Bens de luxos, efeito calmante </li>
+        <li>Evitar: Sensação de frieza </li>
+    </ul></p>
+
+    <p><b>Rosa</b><ul>
+        <li>Amor</li>
+        <li>Romance</li>
+        <li>Sinceridade</li>
+        <li>Cuidados</li>
+        <li>Usar: Produtos femininos e cosméticos</li>
+        <li>Evitar: Muito sentimental e doce </li>
+    </ul></p>
+
+    <h2>Formas de codar as cores</h2>
+    <p>Representação por nomes: background-color: white</p>
+    <p>Representação por códigos hexadecimais (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)</p>
+    <p>As cores são feitas por pequenas partes de Vermelho, verde e azul</p>
+    <p>Exemplo: 0000ff (00 de V, 00 de V e FF -máx- de A)</p>
+    <p><b>style="background color": #0000ff </b></p>
+    <p><strong>Para escolher uma cor específica no vs code basta escolher a cor base e passar o mouse acima da cor, modificando sua tonalidade</strong></p>
+
+    <h2>Harmonia das cores</h2>
+    <img src="c.c" width="400" height="auto" alt="">
+    <br> 
+    <h3>Tipos de cores</h3>
+
+    <p><b>Exemplo: Amarelo-    <p>Cores primárias: Vermelho, azul e amarelo </p>
+    <p>Cores secundárias: Laranja, violeta e verde </p>
+    <p><b>Ambas formam um triângulo equilátero no C.C</b></p>
+    <p>Cor terceária: Junção de uma cor P. + cor S.</p>esverdeado</b></p>
+    <p><b>Formam um hexágono no C.C</b></p>
+    <p>O que está entre a esquerda do roxo e a esquerda do verde amarelado são chamadas de <mark style="background-color: rgb(216, 70, 70);">cores quentes</mark></p>
+    <p>Consequentemente, o que se encontra a direita são as <mark style="background-color: rgb(9, 173, 223);">cores frias</mark></p>
+    <p>Geralmente uma paleta tem de 3 a 5 cores</p>
+    <br>
+
+    <h3>Cores Complementares e Análogas </h3>
+    <p><b>Cores Complementares:</b> O extremo contrate de uma cor é a que está posicionada opostamente no C.C</p>
+    <p><b>Cores Análogas:</b> Cores que tem uma harmonia entre elas</p>
+    <p>São as 2 cores vizinhas a cor principal (uma à direita e uma à esquerda)</p>
+    <p><b>Criar uma paleta:</b> Selecionar a cor principal, pegar as duas análogas a ela e a sua complementar </p>
+    <p>Tendo assim uma paleta de cores com 4 cores (ideal)</p>
+    <p><b>Cores Análogas Relacionadas:</b> Duas cores principais vizinhas + Uma cor depois da vizinha de uma das principais</p>
+    <p>Forma uma paleta com menos contrate, mais suave</p>
+    <p><b>Cores intercaladas:</b> Escolher uma principal, pular uma cor vizinha e pegar a outra 2 vezes, para qualquer direção</p>
+    <p>Não é muito indicado</p>
+    <p><b>Cores Triádicas:</b>Selecionar uma principal e pular 3 para cada lado, formando um triângulo.</p>
+    <p><b>Cores em quadrado:</b>Formando uma cruz/quadrado</p>
+    <p><b>Cores Tetrádicas: Forma um retângulo no cículo cromático </b></p>
+    <p><b>Monocromia: Pegar uma cor principal e modificar a saturação e a luminosidade através do HSL 3 vezes, formando uma paleta </b></p>
+    <p><mark>Utilizar o Adobe Color/Coolors/Paletton</mark>(exemplo de site com cor escolhida)</p>
+
+    <br>
+    <h2>Criando gradientes (degradê):</h2>
+    <p>Basta dentro de qualquer tipo de style inserir o seguinte código:</p>
+    <p>
+        <pre>
+            <code>
+                style
+                body {
+                    background-image: linear-gradient(to right, white, blue);
+                }
+                /style
+            </code>
+        </pre>
+    </p>
+    <p>To right, To left, To up, To bottom, Circle, deg...</p>
+    <p><b>Ajustar o ângulo do degradê:</b> linear-gradient + 'x'deg + cores  </p>
+
+    <h2>Códigos importantes</h2>
+    
+    <h3>Padding</h3>
+    <p>Aumenta o espaço entre o conteúdo e a borda do elemento</p>
+    <p>padding-bottom: Espaço entre o conteúdo e a borda inferior(baixo)</p>
+    <p><mark>shorthand: p.top -> p.right -> p.bottom -> p.left</mark> </p>
+
+
+    <br>
+    <h3>Text-align</h3>
+    <p>Ajusta o alinhamento do texto</p>
+    <br>
+
+
+    <h3>Margin</h3>
+    <p>Adiciona espaço externo entre o elemento e seus vizinhos. </p>
+    <p>Margin 0 e padding 0 deixa os itens mais colados</p>
+    <p>Margin right/left define o tamanho das bordas</p>
+    <p>Margin auto define a centralização automática, pra deixar o elemento no meio </p>
+    <p><strong>Centralizar(meio): </strong>20px auto 40px auto</p>
+
+    <br>
+    <h3>Outline</h3>
+    <p>outline é um tracejado do lado de fora da borda</p>
+    <p>exemplo: outline dashed</p>
+    <strong>
+        <p>Shorthand: O.width -> O.style -> O.color </p>
+    </strong>
+    <br>
+
+
+    <h3>Border</h3>
+    <p>Usada para criar bordas em elementos.</p>
+    <p>Border radius: borda arredondada </p>
+    <p>Shorthand: b.width -> b.style -> b.color </p>
+    <p>Para fazer borda decorada, basta pôr o border image source: url(borda.png)</p>
+    <p>ajustar com border image slice</p>
+    
+    <br>
+    <h3>Box-shadow</h3>
+    <p>Usada para adicionar sombras a elementos.</p>
+    <p>Por exemplo: 1px 1px 1px black</p>
+    <br>
+
+
+    <h3>Display inline</h3>
+    <p>Mantem os elementos na mesma linha</p>
+    <br>
+
+
+    <h3>List-style-type</h3>
+    <p>None: Retira o tipo da lista utilizado</p>
+    <br>
+
+
+    <h3>Identificador</h3>
+    <p>Na página html colocar o id depois do título para fazer modificações exclusivas</p>
+    <p>Exemplo- h1 id='principal'</p>
+    <p>No css colocar o valor: h1#principal{} ou #principal</p>
+    <p><strong>Serve para um elemento</strong></p>
+    <br>
+
+
+    <h3>Classe</h3>
+    <p>Na página html colocar o class depois do título para fazer modificações exclusivas</p>
+    <p>Exemplo- h1 class='principal'</p>
+    <p>No css colocar o valor: .principal</p>
+    <p><strong>Serve para múltiplos elementos</strong></p>
+    <p>Uma mesma tag com mais de uma classe- class='principal intermediario'</p>
+    <p>-Separar por espaço-</p>
+    <br>
+
+
+    <h3>Pseudo-Classe</h3>
+    <p>Mostra o estado</p>
+    <p>Colocar o valor com o :</p>
+    <p>exemplo: h1:hover{</p>
+    <p>(h1:hover > p{) Os parágrafos filhos de h1...</p>
+
+    <h4>visited</h4>
+    <p>
+        <pre>
+            <code>
+    a: visited{
+    color: yellow
+    </code></pre></p>
+    <p>Se o site ja tiver sido visitado muda-se a cor</p>
+
+    <h4>Active</h4>
+    <p>
+        <pre>
+            <code>
+    a: active{
+    color: yellow
+    </code></pre></p>
+    <p>Muda a cor quando clica no link</p>
+
+    <h4>:Hover</h3>
+    <p>
+        <pre>
+            <code>
+    a: hover{
+    box-shadow: 0 0 0.3em (cor);
+    display: inline-block;
+    </code></pre></p>
+    <p>O hover é a subclasse que altera o comportamento quando o mouse passa sobre a âncora</p>
+    <br>
+
+
+    <h3>Text-align</h3>
+    <p>Modificar o tipo de alinhamento utilizado</p>
+    <br>
+
+
+    <h3>Text-Ident</h3>
+    <p>Serve para criar um recúo que demarca o início de um parágrafo</p>
+    <p>ex: text-ident: 10px</p>
+    <br>
+
+    <h2>Fontes</h2>
+    <p>A sequência de fontes permite a substituição caso não carregue em certo dispositivo</p>
+    <p>Utilizar as medidas 'em' ou 'px'</p>
+    <p><mark>Utilizar para achar: Google fonts, Dafont</mark></p>
+    <p><mark>Utilizar para roubar: Fonts ninja(extensão)</mark></p>
+    <p>obs: não funciona com imagens</p>
+    <p><mark>Utilizar para roubar: What font is, font squirrel, my fonts </mark></p>
+    <p>obs: Funciona com imagem</p>
+  
+    <h3>Font size</h3>
+    <p>Tamanho da fonte</p>
+
+
+    <h3>Font weight</h3>
+    <p>Peso da fonte</p>
+    <p>lighter, normal, bold, bolder</p>
+    <p>Variações: font weight: 100-900;</p>
+
+
+    <h3>Font style</h3>
+    <p>italic, normal</p>
+
+
+    <h3>Shorthand</h3>
+    <p>Utilizar quatro linhas para alterar o comportamento da fonte é muita coisa </p>
+    <p>Sequência: font style -> font weight -> font size -> font family</p>
+    <p><strong>Exemplo:</strong> font: italic bolder 3em arial</p>
+
+
+    <h3>Importando fontes</h3>
+    <p>Colocar o @font face (fora dos seletores css). Dentro do Url pôr o nome do arquivo e o format(' ')</p>
+    <p>Tipos de format:</p>
+    <ul>
+        <li>opentype (otf)</li>
+        <li>truetype (ttf)</li>
+        <li>embedded-opentype</li>
+        <li>truetype-aat</li>
+        <li>svg</li>
+    </ul>
+
+    <h2>Grupos</h2>
+    <p>Usar as tags sections e article para dividir seu site</p>
+    <p>use junto com as sub-classes e modique especificamente as informações</p>
+
+    <h2>Testes práticos</h2>
+    <h3>Desaparecimento de palavras</h3>
+    <pre><p><code>
+    h1 > p{
+        display:none;      - Os parágrafos de h1 não aparecem -
+    }
+
+    h1: hover > p {
+        display: block;    - Quando passar o mouse, vai aparecer a frase - 
+        color: white;
+    }
+    </code></p></pre>
+
+    <h2>Responsividade</h2>
+    <p>Usar as tags de <strong> min-width, max-width, img 100%, margin auto</strong></p>
+    <p>indicado para min: 320px</p>
+    <p>indicado para max: 800px</p>
+
+</body>
+</html>
