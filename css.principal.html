@@ -240,18 +240,19 @@
     <p><b>Ajustar o ângulo do degradê:</b> linear-gradient + 'x'deg + cores  </p>
 
     <h2>Códigos importantes</h2>
+    <h3>Text Decoration</h3>
+    <p>Utilizar o text decoration none para retirar o sublinhado do link</p>
+
+    <h3>Line height</h3>
+    <p>Aumenta ou diminui o espaçamento entre linhas do parágrafo</p>
     
     <h3>Padding</h3>
     <p>Aumenta o espaço entre o conteúdo e a borda do elemento</p>
     <p>padding-bottom: Espaço entre o conteúdo e a borda inferior(baixo)</p>
     <p><mark>shorthand: p.top -> p.right -> p.bottom -> p.left</mark> </p>
 
-
-    <br>
     <h3>Text-align</h3>
     <p>Ajusta o alinhamento do texto</p>
-    <br>
-
 
     <h3>Margin</h3>
     <p>Adiciona espaço externo entre o elemento e seus vizinhos. </p>
@@ -420,5 +421,50 @@
     <p>indicado para min: 320px</p>
     <p>indicado para max: 800px</p>
 
+    <h2>Imagens</h2>
+    <p><mark>Color -> image -> position -> repeat -> **size** -> attachment</mark></p>
+    <p>Para colocar imagem de fundo, usar a tag: <strong>background-image: url("")</strong> </p>
+    <p>Existe a função <strong>background repeat</strong>, que permite que uma pequena imagem seja multiplicada de acordo com o tamanho da tela</p>
+    <p>repeat x: eixo x (horizontalmente) / repeat y: eixo y (verticalmente)</p>
+    <p>Existe também a função: no repeat</p>
+    <p><strong>background-attachment</strong>: fixed + background-size: cover = fixar o plano de fundo e tornar responsivo o conteúdo</p>
+    <p>-----------------</p>
+    <p>Se a imagem for muito grande, utilizar o <strong>background-position</strong> para ajustar</p>
+    <p>Serve também para a responsividade, ja que ao ampliar ou reduzir o tamanho da tela, a imagem se adaptará de acordo com a position idicada</p>
+    <p><strong>background-size: cover </strong> Serve para mostrar 100% da tela com pequenos cortes da img</p>
+    <p><strong>background-size: auto </strong> Serve para que o navegador se vire para adaptar </p>
+    <p><strong>background-size: contain </strong> Mostrar 100% da tela sem cortes</p>
+
+    <h2>Tabelas</h2>
+    <p>A tag principal de abetura de tudo de dentro da tabela é <strong>table</strong></p>
+    <p>O <strong>tr</strong> representa os elementos (representados por <strong> td </strong>) dentro da linha horizontal</p>
+    <p>Com <strong>text align center e vertical align middle</strong>, consegue centralizar o conteudo da tabela</p>
+    <p>---------------------</p>
+    <p>No css colocar a borda (border) e a função: <strong>border colapse</strong>: colapse, para unir as linhas</p>
+    <p>As tabelas são divididas em: <strong>thead, tbody e tfoot (conclusão) </strong></p>
+    <p><strong>TR</strong>: Cada linha horizontal de assunto, <strong>TD</strong>: Os elementos dentro do tr, <strong>TH</strong>: elementos títulos</p>
+    <p>---------------------</p>
+    <p><strong>Caption:</strong> Título da tabela </p>    
+    <p><strong>th scope row</strong>: elementos referidos estão na mesma linha horizontal (so utilizar em th)</p>
+    <p><strong>th scope col</strong>: elementos referidos estão na mesma coluna vertical (so utilizar em th) </p>
+    <p>Tem como fazer um efeito zebrado na tabela: <strong>tbody > tr:nth-child(2n)</strong>{determinado background color</p>
+    <p>2n: de duas em 2 linhas</p>
+    <p>---------------------</p>
+    <p><strong>colspan: mesclar colunas</strong></p>
+    <p><strong>rowspan: mesclar linhas</strong></p>
+    <p>Exemplo: td rowspan='3' </p>
+    <p><strong>Editar colunas específicas:</strong> dentro de table criar um colgroup com varias 'col' dentro, cada uma representando uma coluna da tabela </p>
+    <p>
+        <code>
+        <pre>
+            colgroup
+                col class="coluna 1">
+                col class="coluna 2">
+                col class="coluna 3">
+            /colgroup
+        </pre>
+        </code>
+    </p>
+    <p>Responsividade: Colocar toda a tabela dentro de um div e no css pôr dentro da div o <strong>overflow-x: auto</strong></p>
 </body>
 </html>
