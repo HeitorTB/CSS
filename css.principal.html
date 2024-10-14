@@ -274,6 +274,7 @@
     <h3>Border</h3>
     <p>Usada para criar bordas em elementos.</p>
     <p>Border radius: borda arredondada </p>
+    <p><strong>Border radius 50% deixa a img redonda </strong></p>
     <p>Shorthand: b.width -> b.style -> b.color </p>
     <p>Para fazer borda decorada, basta pôr o border image source: url(borda.png)</p>
     <p>ajustar com border image slice</p>
@@ -416,6 +417,12 @@
     }
     </code></p></pre>
 
+    <h3>Centralizar uma div ou section</h3>
+    <p>position: absolute</p>
+    <p>left: 50%</p>
+    <p>top: 50%</p>
+    <p>Tranform: translate(-50%,-50%)</p>
+
     <h2>Responsividade</h2>
     <p>Usar as tags de <strong> min-width, max-width, img 100%, margin auto</strong></p>
     <p>indicado para min: 320px</p>
@@ -466,5 +473,37 @@
         </code>
     </p>
     <p>Responsividade: Colocar toda a tabela dentro de um div e no css pôr dentro da div o <strong>overflow-x: auto</strong></p>
+
+    <h2>IFRAME</h2>
+    <p><strong>Tag: iframe</strong></p>
+    <p>Dentro do src colocar o link da página para que apareça o frame do site</p>
+    <p>Coloque o link do lado de fora do src também, para que caso nao abra o frame, mostre o link</p>
+    
+    <code>
+    <pre>
+        iframe src="link da pag" frameborder="0"> link da pag <\iframe>
+    </pre>
+    </code>
+    <p>Frameborder='1' (com borda)</p>
+    <p>Frameborder='0' (sem borda)</p>
+    
+    <p>-----------------------------</p>  
+    <p>É possível colocar páginas internas do seu site no próprio iframe </p>
+    <p><strong>Abrir um iframe específico na tela ao clicar no link:</strong></p>
+    <ol>
+        <li>Cria um menu com diferentes páginas internas(link)</li>
+        <li>Cria um iframe e define um --name--</li>
+        <li>Coloca o name do iframe no target dos links do menu</li>
+    </ol>
+    <p><strong>Problema:</strong> O iframe enquanto não é escolhido fica em branco</p>
+    <p><strong>Resolução:</strong> Colocar no lugar do src do iframe um srcdoc, e escrever algo dentro com html.</p>
+    <p><strong>Opções de uso:</strong></p>
+    <ol>
+        <li>Vídeos do youtube</li>
+        <li>Google Maps (compartilhar--opção html)</li>
+        <li>Mapas do Waze </li>
+        <li>Google Docs/apresentações (arquivo--publicar na web)</li>
+    </ol>
+
 </body>
 </html>
