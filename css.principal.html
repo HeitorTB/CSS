@@ -505,5 +505,37 @@
         <li>Google Docs/apresentações (arquivo--publicar na web)</li>
     </ol>
 
+    <h2>Formulários</h2>
+    <p><strong>Tag: Form</strong></p>
+    <p>Com a <strong>tag input</strong> cria-se as caixinhas de escrita</p>
+    <p>Com a <strong>tag input type:submit</strong>, cria-se o botão de enviar</p>
+    <p>Estrutura de um input: input type='', name='', id=''</p>
+    <p>Após criar a tag form, colocar dentro o action:banco de dados</p>
+    <p><strong>Action: A tag action serve para anexar os dados após clicar no submit, a uma linguagem de banco de dados</strong></p>
+    <p>-----------------------------</p>
+    <p>Sempre quando for uma caixa de texto, anexar o conteúdo numa <strong>tag label</strong></p>
+    <p>Dentro do label terá um for, nele será colocado o id do input</p>
+    <p><strong>Exemplo:</strong></p>
+    <p><code>
+    <pre>
+        form
+        p> label for='inome'> Nome: <\label 
+        input type='text' name='nome' id='inome'<\p
+        /form 
+    </pre>
+    </code>
+    </p>
+    <p><mark>Existem dois métodos de formulários:</mark></p>
+    <ol>
+        <li><abbr title="Usar para coisas não sigilosas"><strong>Get</strong></abbr>: coloca o que foi inserido na url. Caso nao tenha sido escolhido o método, esse é o padrão</li>
+        <li><abbr title="Coisas Sigilosas"><strong>Post</strong></abbr>: Não aparece na url, mas dá pra acessar com o inspecionar</li>
+    </ol>
+    <p>--- Formulários get são compartilhaveis, formulários post não.</p>
+    <p>--- Usar o post com dados de grande porte, coisas sigilosas e envio de arquivos como fotos</p>
+    <p>-----------------------------</p>
+    <p>Colocar junto com o input o <strong>required</strong>, que serve para dar uma alerta para preencher o campo</p>
+    <p><strong>Definir minimo:</strong> usar depois do required o min-length=''</p>
+    <p><strong>Definir máximo:</strong> usar depois do required o max-length=''</p>
+    <p><strong>Tag Placehoder: </strong>Serve para colocar uma indicação, colocado pós input</p>
 </body>
 </html>
